@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin displayFlex($display, $jc, $ai, $fd) {
+    display: $display;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+}
+
+$mainFont: 'Nunito', sans-serif;

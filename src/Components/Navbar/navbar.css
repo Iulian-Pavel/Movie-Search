@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: 0;
+          flex-direction: 0;
+  width: 100%;
+  height: 8vh;
+  font-family: "Nunito", sans-serif, sans-serif;
+  background: #4f49f5;
+  color: white;
+}
+
+nav .logo {
+  font-size: 24px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: 0;
+          flex-direction: 0;
+  width: 30%;
+  list-style: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .resp-nav {
+    height: 100vh;
+    position: absolute;
+    -webkit-transition: 300ms ease-in-out;
+    transition: 300ms ease-in-out;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  nav {
+    -webkit-transition: 300ms ease-in-out;
+    transition: 300ms ease-in-out;
+  }
+  nav .logo {
+    font-size: large;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .mb-ul {
+    display: block;
+  }
+  nav .mb-ul li:not(:last-child) {
+    margin-bottom: 10%;
+  }
+  nav .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  nav .hamburger .line {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 15px;
+  }
+  nav .hamburger .line:not(:last-child) {
+    margin-bottom: 10%;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */
